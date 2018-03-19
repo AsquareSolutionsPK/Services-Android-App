@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grp1"  android:checkableBehavior="single" >
+    <item android:id="@+id/item_call" android:title="Call Us" android:icon="@drawable/ic_call_black_48px"/>
+    <item android:id="@+id/item_email" android:title=" Send Email" android:icon="@drawable/ic_email_black_24px"/>
+    <item android:id="@+id/item_website" android:title="Visit Website" android:icon="@drawable/ic_public_black_48px"/>
+    </group>
+
+    <item android:id="@+id/item1" android:title="Home" android:icon="@drawable/ic_home_black_24px"/>
+    <item android:id="@+id/item2" android:title="Overview" android:icon="@drawable/ic_info_black_24px"/>
+    <item android:id="@+id/item3" android:title="Search" android:icon="@drawable/ic_search_black_48px"/>
+    <item android:id="@+id/item4" android:title="Portfolio" android:icon="@drawable/ic_insert_drive_file_black_24px"/>
+    <item android:id="@+id/item5" android:title="Team" android:icon="@drawable/ic_group_black_24px"/>
+    <item android:id="@+id/item6" android:title="Clients" android:icon="@drawable/ic_nature_people_black_24px"/>
+    <item android:id="@+id/item7" android:title="Testimonial" android:icon="@drawable/ic_format_quote_black_24px"/>
+    <item android:id="@+id/item8" android:title="Methodolgy" android:icon="@drawable/ic_verified_user_black_24px"/>
+    <item android:id="@+id/item9" android:title="Social" android:icon="@drawable/ic_cloud_circle_black_24px"/>
+    <item android:id="@+id/item10" android:title="FAQ" android:icon="@drawable/ic_question_answer_black_24px"/>
+    <item android:id="@+id/item11" android:title="Rate this App" android:icon="@drawable/ic_star_rate_black_18px"/>
+    <item android:id="@+id/item12" android:title="SignIn" android:icon="@drawable/ic_exit_to_app_48px_svg"/>
+</menu>

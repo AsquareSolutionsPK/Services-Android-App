@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingFormActivity">
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Booking Form "
+                android:textColor="@android:color/white"
+                android:textSize="34sp" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="3">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardMe"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="8dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    tools:context="BookingActivity">
+
+                    <EditText
+                        android:id="@+id/editText_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:hint="Full Name"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/editText_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_name"
+                        android:ems="10"
+                        android:hint="Full Address"
+                        android:inputType="textPersonName" />
+
+
+                    <EditText
+                        android:id="@+id/editText_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/editText_address"
+                        android:layout_below="@+id/editText_email"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="-96dp"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        tools:ignore="NotSibling" />
+
+                    <EditText
+                        android:id="@+id/editText_contactnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="169dp"
+                        android:ems="10"
+                        android:hint="Contact Number"
+                        android:inputType="textPassword" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="245dp"
+                        android:entries="@array/ServiceType"
+                        android:hint="Select the Service you need" />
+
+                    <EditText
+                        android:id="@+id/editText_date"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/editText_name"
+                        android:layout_marginBottom="191dp"
+                        android:ems="10"
+                        android:hint="hr:mn (Time)"
+                        android:inputType="time"
+                        tools:ignore="RtlCompat" />
+
+                    <EditText
+                        android:id="@+id/editText_at"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/editText_time"
+                        android:layout_alignStart="@+id/editText_name"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="at" />
+
+                    <EditText
+                        android:id="@+id/editText_time"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/editText_name"
+                        android:layout_marginBottom="91dp"
+                        android:ems="10"
+                        android:hint="dd-mm-yyyy (Date)"
+                        android:inputType="date"
+                        tools:ignore="RtlCompat" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_time"
+                        android:layout_marginTop="-91dp"
+                        android:layout_toEndOf="@+id/editText_date"
+                        android:text="Submit" />
+
+                    <Button
+                        android:id="@+id/btn_goback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_time"
+                        android:layout_marginTop="-91dp"
+                        android:layout_toEndOf="@+id/editText_at"
+                        android:onClick="ReturnHome"
+                        android:text="Go Back" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

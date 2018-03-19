@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editText_message" type="id" />
+    <item name="logo" type="id" />
+    <item name="textView_prices" type="id" />
+</resources>

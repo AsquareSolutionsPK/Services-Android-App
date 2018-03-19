@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">WorkMan Home Services</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="text_about" />
+    <string name="Title" />
+    <string name="Description" />
+    <string name="Logo" />
+    <string name="text_prices" />
+    <string name="first" />
+    <string name="last" />
+    <string-array name="ServiceType">
+        <item>AC Service</item>
+        <item>Cleaning</item>
+        <item>Construction</item>
+        <item>IT Services</item>
+        <item>Electrical</item>
+        <item>Mechanical</item>
+        <item>Plumbing</item>
+        <item>Tile Fixing</item>
+        <item>Home Appliance Repaire</item>
+        <item>Digging Service</item>
+        <item>Carpenter</item>
+        <item>Car/ Bike Wash</item>
+        <item>Ceiling Work</item>
+        <item>Generator Maintenance</item>
+    </string-array>
+
+</resources>
